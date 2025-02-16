@@ -1,0 +1,105 @@
+html, body, #root, .App {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.App-header {
+  background-color: #5a5a5c;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Ensures h1 stays centered */
+  font-size: 1.5vw;
+  color: black;
+  width: 100%;
+  padding: 1%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.App-header-title {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0 10%;
+  white-space: nowrap; /* Prevents wrapping issues */
+  overflow: hidden;
+}
+
+.App-logo {
+  height: 20vmin;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.App-header-contact {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns text to the right */
+}
+
+.contact h2 {
+  font-size: 1rem; /* Smaller font size for h2 */
+  margin: 0;
+}
+
+.contact p {
+  font-size: small;
+  margin: 2px 0 0 0; /* Ensures it stays right below h2 */
+}
+
+.App-content {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  height: 85%;
+  overflow: hidden;
+}
+
+.App-sidebar {
+  width: 20%;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.App-main {
+  width: 80%;
+  padding: 2%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.about {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 1%;
+  background: #5a5a5c;
+  color: white;
+  box-sizing: border-box;
+}
