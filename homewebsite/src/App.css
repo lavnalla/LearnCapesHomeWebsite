@@ -6,7 +6,8 @@ html, body, #root, .App {
   overflow: hidden;
   box-sizing: border-box;
   font-family: papyrus;
-  color:#F51162
+  color:#8911118e;
+  background-color: #ccc;
 }
 
 .App {
@@ -18,17 +19,16 @@ html, body, #root, .App {
 }
 
 .App-header {
-  background-color: #5a5a5c;
+  
   display: flex;
   align-items: center;
   justify-content: center; /* Ensures h1 stays centered */
   font-size: 1.5vw;
-  color: black;
   width: 100%;
   padding: 1%;
   position: relative;
   box-sizing: border-box;  
-  color:#F51162;
+  color:#8911118e;
   font-weight: bold;
 }
 
@@ -110,7 +110,7 @@ html, body, #root, .App {
 }
 
 .keywords {
-  color: #F51162;
+  color: #8911118e;
   font-weight: bold;
 }
 footer {
