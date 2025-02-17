@@ -70,7 +70,7 @@ function App() {
           <section className="about">
             <h2>About Us</h2>
             <p>
-              At LearnCapes Consulting Inc., we bridge the gap between theory and real-world experience by providing hands-on training in a fully simulated office environment.
+              At LearnCapes Consulting Inc., <span className="keywords"> we bridge the gap between theory and real-world experience by providing hands-on training in a fully simulated office environment.</span>
             </p>
             <ul>
               <li>Our trainees work with industry-standard tools such as <span className="keywords">JIRA, GitHub, Google Cloud Platform (GCP) CI/CD, and Visual Studio Code,</span> just like in top-tier companies.</li>
