@@ -59,7 +59,7 @@ function App() {
         </div>
       </header>
       <div className="App-content">
-      <span className="sidebar"><Sidebar /></span>
+        <span className="sidebar"><Sidebar /></span>
         <main className="App-main">
           <section className="about">
             <h2>About Us</h2>
