@@ -19,7 +19,6 @@ html, body, #root, .App {
 }
 
 .App-header {
-  
   display: flex;
   align-items: center;
   justify-content: center; /* Ensures h1 stays centered */
@@ -47,28 +46,6 @@ html, body, #root, .App {
   left: 10px;
 }
 
-.App-header-contact {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Aligns text to the right */
-}
-
-.contact h2 {
-  font-size: 1rem; /* Smaller font size for h2 */
-  margin: 0;
-  color: black;
-}
-
-.contact p {
-  font-size: small;
-  margin: 2px 0 0 0; /* Ensures it stays right below h2 */
-  color: black
-}
-
 .App-content {
   display: flex;
   width: 100%;
@@ -79,7 +56,7 @@ html, body, #root, .App {
 
 .App-sidebar {
   width: 20%;
-  background-color: #f0f0f0;
+  background-color: #ffff;
   border-right: 1px solid #ccc;
   display: flex;
   flex-direction: column;
@@ -91,28 +68,61 @@ html, body, #root, .App {
 }
 
 .App-main {
-  width: 80%;
+  width: 60%;
   padding: 2%;
   overflow-y: auto;
   box-sizing: border-box;
+}
+
+.App-right-sidebar {
+  width: 20%;
+  background-color: #ffff;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: right;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.contact h2 {
+  font-size: 1rem; /* Smaller font size for h2 */
+  margin: 0;
+  color: black;
+}
+
+.contact p {
+  font-size: small;
+  margin: 2px 0 0 0; /* Ensures it stays right below h2 */
+  color: black;
+}
+
+.App-header-video {
+  margin-top: 20px;
 }
 
 .about {
   text-align: center;
   max-width: 90%;
   margin: auto;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 .about p, .about li {
   color: black;
-  font-size: 1.2vw;
+  font-size: 1rem;
 }
 
-.keywords {
+.keywords, .sidebar {
   color: #8911118e;
   font-weight: bold;
 }
+
+.sidebar {
+  background-color: #ffff;
+}
+
 footer {
   width: 100%;
   text-align: center;

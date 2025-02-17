@@ -57,15 +57,9 @@ function App() {
           <h1>Welcome to LearnCapes Consulting Inc.</h1>
           <p>Providing real-world training with industry-standard tools.</p>
         </div>
-        <div className="App-header-contact">
-          <section className="contact">
-            <h2>Contact Us</h2>
-            <p>Email: lavnalla23@gmail.com</p>
-          </section>
-        </div>
       </header>
       <div className="App-content">
-        <span className='keywords'><Sidebar /></span>
+      <span className="sidebar"><Sidebar /></span>
         <main className="App-main">
           <section className="about">
             <h2>About Us</h2>
@@ -81,8 +75,19 @@ function App() {
               🚀 Learn by doing, not just by watching!
             </p>
           </section>
-          
         </main>
+        <div className="App-right-sidebar">
+          <section className="contact">
+            <h2>Contact Us</h2>
+            <p>Email: lavnalla23@gmail.com</p>
+          </section>
+          <div className="App-header-video">
+            <video width="100%" height="auto" controls>
+              <source src="/LearnCapesHomeWebsite/Intro-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
       </div>
       <footer>
         <p>&copy; 2023 LearnCapes Consulting Inc. All rights reserved.</p>
