@@ -1,23 +1,33 @@
-FROM node:lts-alpine as builder
+# Step 1: Build React App
+FROM node:lts-alpine AS builder
 
-# by only copying package.json, before running npm install. We can leverage dockers caching strategy for steps. Otherwise docker needs to run npm install every time you change any of the code.
-COPY package.json ./
-RUN npm install
-RUN mkdir /app-ui
-RUN mv ./node_modules ./app-ui
 WORKDIR /app-ui
+
+COPY package.json package-lock.json* ./
+RUN npm install --frozen-lockfile --legacy-peer-deps
+
 COPY . .
-# in this step the static React files are created. For more info see package.json
 RUN npm run build
 
+# Step 2: Use Nginx with Cloud Logging Support
 FROM nginx:alpine
 
-# copy the .conf template
+# Install Google Cloud Logging agent
+RUN apk add --no-cache bash curl \
+    && curl -sSO https://dl.google.com/cloudagents/add-google-cloud-ops-agent-repo.sh \
+    && bash add-google-cloud-ops-agent-repo.sh --also-install
+
+# Remove default index page
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy custom Nginx configuration
 COPY ./.nginx/nginx.conf /etc/nginx/nginx.conf
 
-## Remove default nginx index page and replace it with the static files we created in the first step
-RUN rm -rf /usr/share/nginx/html/*
+# Copy built React static files
 COPY --from=builder /app-ui/build /usr/share/nginx/html
+
+# Expose port
 EXPOSE 80
 
-CMD nginx -g 'daemon off;'
+# Start Nginx with logging
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
