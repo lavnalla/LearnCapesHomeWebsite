@@ -65,7 +65,7 @@ function App() {
         </div>
       </header>
       <div className="App-content">
-        <Sidebar />
+        <span className='keywords'><Sidebar /></span>
         <main className="App-main">
           <section className="about">
             <h2>About Us</h2>
