@@ -145,16 +145,19 @@ footer {
 
   .App-sidebar {
     width: 20%; /* Make the sidebar smaller */
+    height: 10%;
   }
 
   .App-main {
     width: 100%; /* Make the main content larger */
-    flex-grow: 1; /* Allow the main content to grow */
+    flex-grow: 1; /* Allow the main content to grow */;
+    height: 60%;
   }
 
   .App-right-sidebar {
     width: 100%;
     border-left: none;
+    height: 40%;
   }
 
   .App-header-title {
