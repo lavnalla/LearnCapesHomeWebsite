@@ -73,9 +73,9 @@ function App() {
               At LearnCapes Consulting Inc., we bridge the gap between theory and real-world experience by providing hands-on training in a fully simulated office environment.
             </p>
             <ul>
-              <li>Our trainees work with industry-standard tools such as JIRA, GitHub, Google Cloud Platform (GCP) CI/CD, and Visual Studio Code, just like in top-tier companies.</li>
-              <li>We follow best practices from Agile methodologies, including Certified Scrum Master (CSM) frameworks, ensuring that participants gain practical experience in project management, collaboration, and DevOps workflows.</li>
-              <li>By mirroring real corporate settings, we empower professionals to transition seamlessly into high-performance teams.</li>
+              <li>Our trainees work with industry-standard tools such as <span className="keywords">JIRA, GitHub, Google Cloud Platform (GCP) CI/CD, and Visual Studio Code,</span> just like in top-tier companies.</li>
+              <li>We follow best practices from Agile methodologies, including <span className="keywords">Certified Scrum Master (CSM) frameworks, </span> ensuring that participants gain practical experience in project management, collaboration, and <span className='keywords'>DevOps </span> workflows.</li>
+              <li>By mirroring <span className='keywords'>real corporate settings</span>, we empower professionals to transition seamlessly into high-performance teams.</li>
             </ul>
             <p className="highlight">
               🚀 Learn by doing, not just by watching!

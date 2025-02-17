@@ -105,6 +105,10 @@ html, body, #root, .App {
   font-size: 1.2vw;
 }
 
+.keywords {
+  color: #F51162;
+  font-weight: bold;
+}
 footer {
   width: 100%;
   text-align: center;
