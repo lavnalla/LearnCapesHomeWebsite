@@ -72,6 +72,7 @@ html, body, #root, .App {
   padding: 2%;
   overflow-y: auto;
   box-sizing: border-box;
+  flex-grow: 1; /* Allow the main content to grow */
 }
 
 .App-right-sidebar {
@@ -151,13 +152,25 @@ footer {
 
   .App-main {
     width: 100%;
+    flex-grow: 1; /* Allow the main content to grow */
   }
 
   .App-header-title {
     padding: 0 5%;
+    white-space: normal; /* Allow text to wrap */
   }
 
   .App-logo {
     height: 20vmin;
+    position: static; /* Remove absolute positioning */
+    margin: 0 auto; /* Center the logo */
+  }
+
+  .App-header-title h1 {
+    font-size: 1.2rem; /* Adjust font size for h1 on mobile */
+  }
+
+  .App-header-title p {
+    font-size: 0.9rem; /* Adjust font size for paragraph on mobile */
   }
 }
