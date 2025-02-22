@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/LearnCapesHomeWebsite/static/css/main.ed010f96.css",
+    "main.css": "/LearnCapesHomeWebsite/static/css/main.a08e68f6.css",
     "main.js": "/LearnCapesHomeWebsite/static/js/main.bf03698d.js",
     "static/media/learncapeslogo.webp": "/LearnCapesHomeWebsite/static/media/learncapeslogo.00f0a345aeab678c9638.webp",
     "index.html": "/LearnCapesHomeWebsite/index.html",
-    "main.ed010f96.css.map": "/LearnCapesHomeWebsite/static/css/main.ed010f96.css.map",
+    "main.a08e68f6.css.map": "/LearnCapesHomeWebsite/static/css/main.a08e68f6.css.map",
     "main.bf03698d.js.map": "/LearnCapesHomeWebsite/static/js/main.bf03698d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed010f96.css",
+    "static/css/main.a08e68f6.css",
     "static/js/main.bf03698d.js"
   ]
 }
