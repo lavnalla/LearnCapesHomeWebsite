@@ -161,12 +161,12 @@ footer {
   
 
   .App-main {
-    width: 60%;
+    width: 65%;
     overflow: scroll;
   }
 
   .App-right-sidebar {
-    width: 15%
+    width: 5%;
   }
 
   .App-header {
