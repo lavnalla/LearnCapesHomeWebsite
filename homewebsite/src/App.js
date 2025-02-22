@@ -1,10 +1,12 @@
+import React from 'react';
 import logo from './learncapeslogo.webp';
 import './App.css';
-import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { FaHome, FaUserGraduate, FaTools, FaBars } from "react-icons/fa";
+import i18n from './i18n';
 
 function Sidebar() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = React.useState(true);
 
   return (
     <div className="flex">
@@ -47,39 +49,37 @@ function Sidebar() {
 }
 
 function App() {
+  const { t } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <div className="App">
+      <div className="language-switcher">
+        <button onClick={() => changeLanguage('en')}>English</button>
+        <button onClick={() => changeLanguage('hi')}>हिन्दी</button>
+        <button onClick={() => changeLanguage('te')}>తెలుగు</button>
+      </div>
       <header className="App-header">
         <div className="App-header-logo">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
         <div className="App-header-title">
-          <h1>Welcome to LearnCapes Consulting Inc.</h1>
-          <p>Providing real-world training with industry-standard tools.</p>
+          <h1>{t('welcome')}</h1>
+          <p>{t('description')}</p>
         </div>
       </header>
       <div className="App-content">
         <span className="sidebar"><Sidebar /></span>
         <main className="App-main">
-          <section className="about">
-            <h2>About Us</h2>
-            <p>
-              At LearnCapes Consulting Inc., <span className="keywords"> we bridge the gap between theory and real-world experience by providing hands-on training in a fully simulated office environment.</span>
-            </p>
-            <ul>
-              <li>Our trainees work with industry-standard tools such as <span className="keywords">JIRA, GitHub, Google Cloud Platform (GCP) CI/CD, and Visual Studio Code,</span> just like in top-tier companies.</li>
-              <li>We follow best practices from Agile methodologies, including <span className="keywords">Certified Scrum Master (CSM) frameworks, </span> ensuring that participants gain practical experience in project management, collaboration, and <span className='keywords'>DevOps </span> workflows.</li>
-              <li>By mirroring <span className='keywords'>real corporate settings</span>, we empower professionals to transition seamlessly into high-performance teams.</li>
-            </ul>
-            <p className="highlight">
-              🚀 Learn by doing, not just by watching!
-            </p>
-          </section>
+          <section className="about" dangerouslySetInnerHTML={{ __html: t('about_description') }} />
         </main>
         <div className="App-right-sidebar">
           <section className="contact">
-            <h2>Contact Us</h2>
-            <p>Email: lavnalla23@gmail.com</p>
+            <h2>{t('contact_us')}</h2>
+            <p>{t('email')}</p>
           </section>
           <div className="App-header-video">
             <video width="100%" height="auto" controls>

@@ -1,0 +1,8 @@
+{
+    "welcome": "Welcome to LearnCapes Consulting Inc.",
+    "description": "Providing real-world training with industry-standard tools.",
+    "about_us": "About Us",
+    "about_description": "<h2>About Us</h2><p>At LearnCapes Consulting Inc., <span class=\"keywords\"> we bridge the gap between theory and real-world experience by providing hands-on training in a fully simulated office environment.</span></p><ul><li>Our trainees work with industry-standard tools such as <span class=\"keywords\">JIRA, GitHub, Google Cloud Platform (GCP) CI/CD, and Visual Studio Code,</span> just like in top-tier companies.</li><li>We follow best practices from Agile methodologies, including <span class=\"keywords\">Certified Scrum Master (CSM) frameworks, </span> ensuring that participants gain practical experience in project management, collaboration, and <span class='keywords'>DevOps </span> workflows.</li><li>By mirroring <span class='keywords'>real corporate settings</span>, we empower professionals to transition seamlessly into high-performance teams.</li></ul><p class=\"highlight\">🚀 Learn by doing, not just by watching!</p>",
+    "contact_us": "Contact Us",
+    "email": "Email: lavnalla23@gmail.com"
+  }
