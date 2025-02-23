@@ -45,6 +45,11 @@ body {
   background-color: #666;
 }
 
+.contact{
+  background-color: gray;
+  color: white;
+}
+
 /* Header */
 .App-header {
   display: flex;
@@ -145,7 +150,8 @@ body {
 }
 
 .sidebar {
-  color: #F02F34;
+  background-color: white;
+  color: black;
   font-weight: bold;
 }
 
