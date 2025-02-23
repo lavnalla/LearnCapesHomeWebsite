@@ -183,35 +183,35 @@ footer {
   }
 
   .App-content {
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
-    overflow: scroll;
-  }
-
-  .sidebar {
-    width: 30%;
     overflow: auto;
   }
 
-  
+  .sidebar {
+    width: 100%;
+    overflow: auto;
+  }
 
-  .App-main {
-    width: 65%;
-    overflow: scroll;
+  .about {
+    width: 100%;
+    overflow: auto;
   }
 
   .App-right-sidebar {
-    width: 5%;
+    width: 100%;
   }
 
   .App-header {
-    height: 20%;
+    height: auto;
     width: 100%;
-    
   }
 
-  .footer {
-    height: 10%;
+  footer {
+    height: auto;
     width: 100%;
+  }
+  .App-header-image {
+    display: none;
   }
 }
