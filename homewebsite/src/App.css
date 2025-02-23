@@ -166,6 +166,24 @@ body {
   border-radius: 8px;
 }
 
+.video-popup {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  width: 300px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.video-popup video {
+  width: 100%;
+  height: auto;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -213,5 +231,10 @@ footer {
   }
   .App-header-image {
     display: none;
+  }
+  .video-popup {
+    width: 90%;
+    top: 5%;
+    right: 5%;
   }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './learncapeslogo.webp';
 import './App.css';
 import { useTranslation } from 'react-i18next';
@@ -55,6 +55,13 @@ function App() {
     i18n.changeLanguage(lng);
   };
 
+  useEffect(() => {
+    const video = document.getElementById('intro-video');
+    if (video) {
+      video.play();
+    }
+  }, []);
+
   return (
     <div className="App">
       <div className="language-switcher">
@@ -77,20 +84,20 @@ function App() {
       <div className="App-content">
         <span className="sidebar"><Sidebar /></span>
         <main className="App-main">
-          <section className="about" dangerouslySetInnerHTML={{ __html: t('about_description') }} />          
+          <section className="about" dangerouslySetInnerHTML={{ __html: t('about_description') }} />
         </main>
         <div className="App-right-sidebar">
           <section className="contact">
             <h2>{t('contact_us')}</h2>
             <p>{t('email')}</p>
           </section>
-          <div className="App-header-video">
-            <video width="100%" height="auto" controls>
-              <source src="/LearnCapesHomeWebsite/Intro-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>          
         </div>
+      </div>
+      <div className="video-popup">
+        <video id="intro-video" width="100%" height="auto" controls muted autoplay>
+          <source src="/LearnCapesHomeWebsite/Intro-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <footer>
         <p>&copy; 2023 LearnCapes Consulting Inc. All rights reserved.</p>
