@@ -70,11 +70,14 @@ function App() {
           <h1>{t('welcome')}</h1>
           <p>{t('description')}</p>
         </div>
+        <div className="App-header-image">
+          <img src="/LearnCapesHomeWebsite/devops.png" alt="devops"/>
+        </div>
       </header>
       <div className="App-content">
         <span className="sidebar"><Sidebar /></span>
         <main className="App-main">
-          <section className="about" dangerouslySetInnerHTML={{ __html: t('about_description') }} />
+          <section className="about" dangerouslySetInnerHTML={{ __html: t('about_description') }} />          
         </main>
         <div className="App-right-sidebar">
           <section className="contact">
@@ -86,7 +89,7 @@ function App() {
               <source src="/LearnCapesHomeWebsite/Intro-video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          </div>
+          </div>          
         </div>
       </div>
       <footer>
