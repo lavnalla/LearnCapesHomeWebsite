@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/LearnCapesHomeWebsite/static/css/main.a5a254c6.css",
-    "main.js": "/LearnCapesHomeWebsite/static/js/main.d7e2436b.js",
+    "main.css": "/LearnCapesHomeWebsite/static/css/main.3a8caa55.css",
+    "main.js": "/LearnCapesHomeWebsite/static/js/main.a3b71eaa.js",
     "static/media/learncapeslogo.webp": "/LearnCapesHomeWebsite/static/media/learncapeslogo.00f0a345aeab678c9638.webp",
     "static/media/Fullstack.png": "/LearnCapesHomeWebsite/static/media/Fullstack.fa4e6076f4b119454437.png",
     "index.html": "/LearnCapesHomeWebsite/index.html",
-    "main.a5a254c6.css.map": "/LearnCapesHomeWebsite/static/css/main.a5a254c6.css.map",
-    "main.d7e2436b.js.map": "/LearnCapesHomeWebsite/static/js/main.d7e2436b.js.map"
+    "main.3a8caa55.css.map": "/LearnCapesHomeWebsite/static/css/main.3a8caa55.css.map",
+    "main.a3b71eaa.js.map": "/LearnCapesHomeWebsite/static/js/main.a3b71eaa.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5a254c6.css",
-    "static/js/main.d7e2436b.js"
+    "static/css/main.3a8caa55.css",
+    "static/js/main.a3b71eaa.js"
   ]
 }
