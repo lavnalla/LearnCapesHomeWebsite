@@ -171,17 +171,47 @@ body {
   top: 10%;
   right: 10%;
   width: 300px;
-  height: auto;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.video-popup.hidden {
+  display: none;
 }
 
 .video-popup video {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.minimize-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  z-index: 1100; /* Ensure it's above the video */
+}
+
+
+.minimize-button:hover {
+  background-color: #cc0000;
 }
 
 /* Footer */

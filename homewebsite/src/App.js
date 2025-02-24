@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './learncapeslogo.webp';
 import './App.css';
 import { useTranslation } from 'react-i18next';
@@ -6,7 +6,7 @@ import { FaHome, FaUserGraduate, FaTools, FaBars } from "react-icons/fa";
 import i18n from './i18n';
 
 function Sidebar() {
-  const [isOpen, setIsOpen] = React.useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <div className="flex">
@@ -50,6 +50,7 @@ function Sidebar() {
 
 function App() {
   const { t } = useTranslation();
+  const [isVideoVisible, setIsVideoVisible] = useState(true);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -91,14 +92,25 @@ function App() {
             <h2>{t('contact_us')}</h2>
             <p>{t('email')}</p>
           </section>
+          {!isVideoVisible && (
+            <div className="App-header-video">
+              <video id="intro-video" width="100%" height="auto" controls muted autoplay>
+                <source src="/LearnCapesHomeWebsite/Intro-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          )}
         </div>
       </div>
-      <div className="video-popup">
-        <video id="intro-video" width="100%" height="auto" controls muted autoplay>
-          <source src="/LearnCapesHomeWebsite/Intro-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      {isVideoVisible && (
+        <div className="video-popup">
+          <button className="minimize-button" onClick={() => setIsVideoVisible(false)}>✖</button>
+          <video id="intro-video" width="100%" height="auto" controls muted autoPlay>
+            <source src="/LearnCapesHomeWebsite/Intro-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
       <footer>
         <p>&copy; 2023 LearnCapes Consulting Inc. All rights reserved.</p>
       </footer>
